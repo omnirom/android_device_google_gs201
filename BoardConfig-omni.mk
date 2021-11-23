@@ -1,1 +1,6 @@
-#
+# Partitions
+AB_OTA_PARTITIONS += \
+    vendor_dlkm
+
+BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm#
