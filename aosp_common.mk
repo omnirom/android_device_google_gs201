@@ -29,7 +29,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 #
 # All components inherited here go to product image
 #
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
+ifneq ($(BOARD_WITHOUT_RADIO),true)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_product.mk)
+endif
+$(call inherit-product, frameworks/base/data/sounds/AudioPackage14.mk)
 
 #
 # All components inherited here go to vendor image
