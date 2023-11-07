@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "omnirom",
+    "repository": "android_device_google_gs101",
+    "target_path": "device/google/gs101",
+    "revision": "android-14.0"
+  }
+]
